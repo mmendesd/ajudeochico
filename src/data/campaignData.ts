@@ -310,7 +310,7 @@ export const campaignData = {
     buttonLabel: 'Falar no WhatsApp',
     whatsappMessage: 'Oi! Quero participar da rifa solidária do Chico.',
     note:
-      'Os detalhes da rifa podem ser ajustados no arquivo central caso você altere valor, quantidade de números ou data do sorteio.'
+      'Lembrando que é possível comprar mais de um número.'
   },
   evidence: {
     id: 'provas',
@@ -325,7 +325,7 @@ export const campaignData = {
     eyebrow: 'Atualizações',
     title: 'Linha do tempo da campanha e do tratamento',
     description:
-      'Use esta área para manter quem ajudou informado sobre consultas, exames, arrecadação, cirurgia e pós-operatório.',
+      'Atualizarei esta área para mante-los atualizados sobre consultas, exames, arrecadação, cirurgia e pós-operatório.',
     items: [
       {
         date: '12 abr 2026',
