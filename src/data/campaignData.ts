@@ -41,7 +41,7 @@ export type PrizeItem = {
 };
 
 const goalAmount = 10000;
-const raisedAmount = 0;
+const raisedAmount = 33;
 const remainingAmount = Math.max(goalAmount - raisedAmount, 0);
 
 const galleryImages: MediaItem[] = [
@@ -135,11 +135,11 @@ export const campaignData = {
   ] satisfies NavigationLink[],
   hero: {
     eyebrow: 'Tratamento ortopédico urgente',
-    title: 'Ajude o Chico a voltar a andar com segurança e sem dor',
+    title: 'Ajude o Chico, de 17 anos, a voltar a andar sem dor',
     subtitle:
-      'Depois de um acidente, o Chico rompeu três ligamentos da patela e agora precisa de cirurgia, exames e acompanhamento veterinário.',
+      'Após um trauma grave, o Chico rompeu três ligamentos da patela e agora sente dor, tem dificuldade para se locomover e precisa de cirurgia com urgência.',
     description:
-      'Criei esta página para concentrar todas as informações da campanha com clareza, provas do caso e maneiras rápidas de ajudar.',
+      'Organizei aqui todas as informações, provas e formas de contribuição para tentar garantir ao Chico o tratamento que ele precisa nesta fase tão difícil',
     image: galleryImages[0],
     cards: [
       {
@@ -183,27 +183,27 @@ export const campaignData = {
   about: {
     id: 'historia',
     eyebrow: 'Quem é o Chico',
-    title: 'Um companheiro carinhoso, curioso e muito amado em casa',
+    title: 'Chico é um gatinho de 17 anos, carinhoso e muito amado pela família',
     description:
-      'O Chico é daqueles gatos que acompanham tudo de perto: fica por perto quando alguém senta no sofá, pede carinho com a cabeça e transforma a rotina da casa em algo mais leve.',
+      'O Chico sempre esteve presente na rotina da casa com seu jeito carinhoso, tranquilo e companheiro. Aos 17 anos, ele merece atravessar essa fase com cuidado, conforto e dignidade.',
     paragraphs: [
-      'Ele sempre foi ativo, brincalhão e presente em cada cantinho. Ver o Chico sem conseguir se apoiar direito, com dor e limitação para andar, foi um choque para toda a família.',
-      'Esta campanha existe para dar a ele uma chance real de voltar a caminhar com conforto, fazer o tratamento certo e se recuperar com dignidade.'
+      'Ele sempre foi ativo dentro do jeito dele, independente e presente. Agora, com a lesão na patela, até movimentos simples passaram a causar dor e insegurança.',
+      'A campanha foi criada para tentar garantir a cirurgia, os exames e toda a recuperação necessária para que ele tenha mais conforto e menos sofrimento.'
     ],
     highlightsTitle: 'Por que o Chico importa',
     highlights: [
-      'Gato idoso, muito dócil e acostumado com rotina dentro de casa.',
-      'Sempre foi ativo e independente, então a perda de mobilidade mudou completamente o dia a dia dele.',
-      'A família está reunindo documentos, exames e atualizações para manter a campanha transparente.'
+      'Gato idoso, muito querido pela família e acostumado a uma rotina de conforto e cuidado.',
+      'Depois do trauma, a perda de mobilidade mudou completamente o dia a dia do Chico.',
+      'Toda a arrecadação está sendo organizada com documentos, registros e prestação de contas.'
     ],
     images: galleryImages.slice(1)
   },
   accident: {
     id: 'acidente',
     eyebrow: 'O que aconteceu',
-    title: 'O Chico sofreu um acidente e teve a mobilidade comprometida',
+    title: 'O Chico sofreu um trauma grave e hoje tem a mobilidade comprometida',
     intro:
-      'Após o acidente, ele passou a apresentar dor, dificuldade para apoiar a pata e limitação importante para andar normalmente.',
+      'Depois do trauma, o Chico passou a sentir dor, dificuldade para apoiar a perna e limitação importante para se locomover, o que tornou o quadro ainda mais delicado por causa da idade.',
     facts: [
       'Foi identificado rompimento de três ligamentos da patela.',
       'A instabilidade na perna afetou diretamente a locomoção do Chico.',
@@ -213,10 +213,10 @@ export const campaignData = {
     ],
     urgencyTitle: 'Por que a ajuda é urgente',
     urgencyText:
-      'Quanto antes o tratamento for realizado, maior a chance de o Chico voltar a se movimentar com mais conforto e menos risco de sequelas.',
+      'Como o Chico já tem 17 anos e está com a mobilidade comprometida, agir rápido pode reduzir sofrimento, evitar piora do quadro e aumentar as chances de recuperação com mais conforto.',
     supportTitle: 'Tratamento com várias etapas',
     supportText:
-      'O valor da campanha foi pensado para cobrir não apenas a cirurgia, mas também exames, medicação e o processo de recuperação clínica do Chico.'
+      'A campanha busca cobrir cirurgia, exames, medicação e toda a fase de recuperação, porque o tratamento do Chico não termina no centro cirúrgico.'
   },
   clinic: {
     name: 'PetSimVet',
@@ -228,7 +228,7 @@ export const campaignData = {
     eyebrow: 'Meta e progresso',
     title: 'Meta de arrecadação',
     description:
-      'A meta cobre cirurgia, exames, medicação, deslocamentos e o período de recuperação do Chico.',
+      'A meta foi definida para cobrir cirurgia, exames, medicação, deslocamentos e recuperação do Chico, um gato idoso que precisa de cuidado completo nesta fase.',
     goalAmount,
     raisedAmount,
     remainingAmount,
@@ -239,14 +239,14 @@ export const campaignData = {
       progress: 'Percentual da meta'
     },
     note:
-      'Se o valor arrecadado ultrapassar a meta, o excedente será usado nos custos veterinários complementares e atualizado na prestação de contas.'
+      'Se a meta for ultrapassada, o valor excedente será usado em custos veterinários complementares, com atualização transparente da prestação de contas.'
   },
   help: {
     id: 'ajudar',
     eyebrow: 'Como ajudar',
-    title: 'Três caminhos simples para ajudar o Chico agora',
+    title: 'Escolha a forma mais rápida de ajudar o Chico agora',
     description:
-      'Você pode contribuir pela Vakinha, fazer um Pix direto ou participar da rifa solidária. Todas as formas de apoio ajudam no tratamento.',
+      'Vakinha, Pix e rifa solidária ajudam a aproximar o Chico da cirurgia e da recuperação. Toda contribuição faz diferença.',
     vakinha: {
       badge: 'Plataforma externa',
       title: 'Doação pela Vakinha',
@@ -259,7 +259,7 @@ export const campaignData = {
       badge: 'Doação direta',
       title: 'Doação por Pix',
       description:
-        'Para quem quer doar em poucos segundos. A chave pode ser copiada com um toque e o QR Code fica pronto para atualização.',
+        'Para quem quer doar em poucos segundos. A chave pode ser copiada com um toque ou escaneada via QRCode',
       keyLabel: 'Chave Pix',
       key: 'matheusmendesdealmeida1@gmail.com',
       copyLabel: 'Copiar chave Pix',
@@ -277,12 +277,12 @@ export const campaignData = {
   raffle: {
     id: 'rifa',
     eyebrow: 'Rifa solidária',
-    title: 'Participar da rifa também ajuda no tratamento do Chico',
+    title: 'Participar da rifa também ajuda diretamente no tratamento do Chico',
     description:
-      'Cada número vendido contribui para custear cirurgia, exames e recuperação. É uma forma acessível de participar e ainda concorrer a prêmios em Pix.',
+      'Cada número vendido ajuda a custear cirurgia, exames, medicação e recuperação. É uma forma acessível de colaborar e ainda concorrer a prêmios em Pix.',
     pricePerNumber: 10,
     totalNumbers: 1000,
-    drawDate: '30 de maio de 2026',
+    drawDate: '2 de maio de 2026, às 20h',
     badge: 'Rifa ativa',
     labels: {
       pricePerNumber: 'Valor por número',
@@ -325,7 +325,7 @@ export const campaignData = {
     eyebrow: 'Atualizações',
     title: 'Linha do tempo da campanha e do tratamento',
     description:
-      'Atualizarei esta área para mante-los atualizados sobre consultas, exames, arrecadação, cirurgia e pós-operatório.',
+      'Esta área será atualizada para mantê-los informados sobre consultas, exames, arrecadação, cirurgia e recuperação do Chico.',
     items: [
       {
         date: '12 abr 2026',
@@ -373,7 +373,7 @@ export const campaignData = {
     copyLinkButtonLabel: 'Copiar link da campanha',
     copiedLabel: 'Link copiado',
     message:
-      'Oi! Estou compartilhando a campanha do Chico. Ele sofreu um acidente, rompeu três ligamentos da patela e precisa de ajuda para cirurgia, exames e recuperação. Qualquer apoio faz diferença.'
+      'Oi! Estou compartilhando a campanha do Chico. Ele tem 17 anos, sofreu um trauma grave, rompeu três ligamentos da patela e precisa de ajuda para cirurgia, exames e recuperação. Qualquer valor ou compartilhamento faz diferença.'
   },
   footer: {
     eyebrow: 'Contato e transparência',
@@ -382,7 +382,7 @@ export const campaignData = {
     transparencyNote:
       'A proposta desta página é reunir informações, contatos e formas de contribuição com transparência e facilidade de atualização.',
     finalMessage:
-      'Cada compartilhamento, cada doação e cada participação na rifa ajudam o Chico a ficar mais perto do tratamento que ele precisa.',
+      'Cada doação, cada compartilhamento e cada participação na rifa ajudam o Chico a ficar mais perto da cirurgia e de uma recuperação com mais conforto e dignidade.',
     whatsappLabel: 'WhatsApp',
     instagramLabel: 'Instagram',
     whatsappMessage: 'Oi! Vi a página do Chico e quero contribuir.'

@@ -1,8 +1,7 @@
-export const getCurrentCampaignUrl = (fallbackUrl: string) =>
-  typeof window !== 'undefined' ? window.location.href : fallbackUrl;
+export const getCampaignUrl = (campaignUrl: string) => campaignUrl;
 
 export const buildWhatsAppShareUrl = (message: string, url: string) => {
-  const content = `${message}\n\n${url}`;
+  const content = `${message} ${url}`;
   return `https://wa.me/?text=${encodeURIComponent(content)}`;
 };
 

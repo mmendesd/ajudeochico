@@ -3,7 +3,7 @@ import { Check, Copy, MessageCircleHeart } from 'lucide-react';
 import { useState } from 'react';
 import type { CampaignData } from '../data/campaignData';
 import { copyTextToClipboard } from '../utils/clipboard';
-import { buildWhatsAppShareUrl, getCurrentCampaignUrl } from '../utils/share';
+import { buildWhatsAppShareUrl, getCampaignUrl } from '../utils/share';
 import SectionTitle from './SectionTitle';
 
 type ShareSectionProps = {
@@ -14,7 +14,7 @@ type ShareSectionProps = {
 
 function ShareSection({ share, contact, labels }: ShareSectionProps) {
   const [copyStatus, setCopyStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const campaignUrl = getCurrentCampaignUrl(contact.campaignUrl);
+  const campaignUrl = getCampaignUrl(contact.campaignUrl);
   const whatsappUrl = buildWhatsAppShareUrl(share.message, campaignUrl);
 
   const handleCopy = async () => {
